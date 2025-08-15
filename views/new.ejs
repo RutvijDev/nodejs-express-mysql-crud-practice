@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New User</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header-title">User CRUD App</a>
+    </header>
+
+    <main class="container">
+      <div class="card">
+        <h2>Create a New User</h2>
+        <form method="post" action="/user">
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            required
+          />
+          <input type="email" name="email" placeholder="Enter Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+          <div class="form-actions">
+            <button class="btn btn-success">Create User</button>
+            <a href="/user" class="btn btn-secondary">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
